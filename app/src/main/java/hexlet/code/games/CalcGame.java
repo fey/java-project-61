@@ -39,8 +39,8 @@ public class CalcGame {
         String[] operations = {"+", "-", "*"};
         var operationIndex = new Random().nextInt(operations.length);
         var operation = operations[operationIndex];
-        var number1 = RandomUtils.nextInt(1, 100);
-        var number2 = RandomUtils.nextInt(1, 100);
+        var number1 = RandomUtils.nextInt(1, 20);
+        var number2 = RandomUtils.nextInt(1, 20);
         var question = number1 + " " + operation + " " + number2;
         var answer = Integer.toString(calculate(operation, number1, number2));
 

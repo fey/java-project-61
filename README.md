@@ -15,3 +15,4 @@ Bundle of CLI games.
 ### Demo
 
 * [Brain Even](https://asciinema.org/a/KmiKZ0ZogL124tYSGly9UibeF)
+* [Brain Calc](https://asciinema.org/a/lG06rtJfz2vyIvfLRhheFeARK)
