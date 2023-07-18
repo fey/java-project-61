@@ -11,26 +11,32 @@ import hexlet.code.games.ProgressionGame;
 public class App {
     public static void main(String[] args) {
         var scanner = new Scanner(System.in);
+        final var menuItemGreet = 1;
+        final var menuItemEven = 2;
+        final var menuItemCalc = 3;
+        final var menuItemGCD = 4;
+        final var menuItemProgression = 5;
+        final var menuItemPrime = 6;
 
         System.out.println("Please enter the game number and press Enter.");
-        System.out.println("1 - Greet");
-        System.out.println("2 - Even");
-        System.out.println("3 - Calc");
-        System.out.println("4 - GCD");
-        System.out.println("5 - Progression");
-        System.out.println("6 - Prime");
+        System.out.println(menuItemGreet + " - Greet");
+        System.out.println(menuItemEven + " - Even");
+        System.out.println(menuItemCalc + " - Calc");
+        System.out.println(menuItemGCD + " - GCD");
+        System.out.println(menuItemProgression + " - Progression");
+        System.out.println(menuItemPrime + " - Prime");
         System.out.println("0 - Exit");
 
         System.out.print("Your choice: ");
         var chooseMenuItem = Integer.parseInt(scanner.next());
 
         switch (chooseMenuItem) {
-            case 1 -> greeting();
-            case 2 -> EvenGame.runGame();
-            case 3 -> CalcGame.runGame();
-            case 4 -> GcdGame.runGame();
-            case 5 -> ProgressionGame.runGame();
-            case 6 -> PrimeGame.runGame();
+            case menuItemGreet -> greeting();
+            case menuItemEven -> EvenGame.runGame();
+            case menuItemCalc -> CalcGame.runGame();
+            case menuItemGCD -> GcdGame.runGame();
+            case menuItemProgression -> ProgressionGame.runGame();
+            case menuItemPrime -> PrimeGame.runGame();
             default -> System.exit(0);
         }
     }
