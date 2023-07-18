@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import hexlet.code.games.CalcGame;
 import hexlet.code.games.EvenGame;
+import hexlet.code.games.GcdGame;
 
 public class App {
     public static void main(String[] args) {
@@ -13,19 +14,26 @@ public class App {
         System.out.println("1 - Greet");
         System.out.println("2 - Even");
         System.out.println("3 - Calc");
+        System.out.println("4 - GCD");
+
         System.out.println("0 - Exit");
 
         System.out.print("Your choice: ");
         var chooseMenuItem = Integer.parseInt(scanner.next());
 
         switch (chooseMenuItem) {
-            case (1):
+            case 1:
                 greeting();
                 break;
-            case (2):
+            case 2:
                 EvenGame.runGame();
+                break;
             case 3:
                 CalcGame.runGame();
+                break;
+            case 4:
+                GcdGame.runGame();
+                break;
             default:
                 System.exit(0);
         }
