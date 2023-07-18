@@ -33,7 +33,7 @@ public class ProgressionGame {
 
         for (var i = 0; i < progression.length; i += 1) {
             var element = i == hiddenIndex ? ".." : Integer.toString(progression[i]);
-                joiner.add(element);
+            joiner.add(element);
         }
 
         return joiner.toString();
