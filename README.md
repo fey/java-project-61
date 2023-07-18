@@ -17,3 +17,4 @@ Bundle of CLI games.
 * [Brain Even](https://asciinema.org/a/KmiKZ0ZogL124tYSGly9UibeF)
 * [Brain Calc](https://asciinema.org/a/lG06rtJfz2vyIvfLRhheFeARK)
 * [Brain GCD](https://asciinema.org/a/3klfYa52uVz6KS7tEsnfXq4UI)
+* [Brain Progression](https://asciinema.org/a/qtWHBdWyM7kVYVxUfX25MfB2x)
