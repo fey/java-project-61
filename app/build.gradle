@@ -12,7 +12,7 @@ group = 'hexlet.code'
 version = '1.0-SNAPSHOT'
 
 compileJava {
-    options.release = 19
+    options.release = 20
 }
 
 run {
