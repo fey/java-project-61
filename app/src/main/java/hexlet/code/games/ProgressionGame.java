@@ -1,42 +1,21 @@
 package hexlet.code.games;
 
-import org.apache.commons.lang3.ArrayUtils;
+import hexlet.code.Engine;
+import hexlet.code.GameRound;
 import org.apache.commons.lang3.RandomUtils;
-import org.apache.commons.lang3.StringUtils;
 
-import java.util.Arrays;
-import java.util.Scanner;
 import java.util.StringJoiner;
 
 public class ProgressionGame {
     public static void runGame() {
-        var scanner = new Scanner(System.in);
-        System.out.println("Welcome to the Brain Games!");
-        System.out.print("What is your name? ");
-        String userName = scanner.next();
-        System.out.println("Hello, " + userName + "!");
-
         var description = "What number is missing in the progression?";
+        var rounds = new GameRound[Engine.ROUNDS_COUNT];
 
-        var roundsCount = 3;
-        System.out.println(description);
-        for (var i = 1; i <= roundsCount; i += 1) {
-            var round = buildRound();
-            System.out.println("Question: " + round.getQuestion());
-            System.out.print("Your answer: ");
-            var answer = round.getAnswer();
-            var userAnswer = scanner.next();
-
-            if (!answer.equals(userAnswer)) {
-                System.out.println("'" + userAnswer + "' is wrong answer ;(. Correct answer was '" + answer + "'.");
-                System.out.println("Let's try again, " + userName + "!");
-                return;
-            }
-            System.out.println("Correct!");
-
+        for (var i = 0; i < Engine.ROUNDS_COUNT; i += 1) {
+            rounds[i] = buildRound();
         }
 
-        System.out.println("Congratulations, " + userName + "!");
+        Engine.runGame(description, rounds);
     }
 
     static int[] buildProgression(int first, int step, int length) {

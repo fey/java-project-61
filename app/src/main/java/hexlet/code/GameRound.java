@@ -1,10 +1,10 @@
-package hexlet.code.games;
+package hexlet.code;
 
-class GameRound {
-    private String question;
-    private String answer;
+public class GameRound {
+    private final String question;
+    private final String answer;
 
-    GameRound(String question, String answer) {
+    public GameRound(String question, String answer) {
         this.question = question;
         this.answer = answer;
     }
