@@ -19,8 +19,8 @@ public class CalcGame {
     }
     static GameRound buildRound() {
         String[] operations = {"+", "-", "*"};
-        var min = 1;
-        var max = 20;
+        final var min = 1;
+        final var max = 20;
         var operationIndex = new Random().nextInt(operations.length);
         var operation = operations[operationIndex];
         var number1 = RandomUtils.nextInt(min, max);

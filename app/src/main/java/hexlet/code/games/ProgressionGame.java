@@ -39,9 +39,9 @@ public class ProgressionGame {
         return joiner.toString();
     }
     static GameRound buildRound() {
-        var length = 10;
-        var min = 1;
-        var max = 10;
+        final var length = 10;
+        final var min = 1;
+        final var max = 10;
         var firstElement = RandomUtils.nextInt(min, max);
         var step = RandomUtils.nextInt(min, max);
         var hiddenIndex = RandomUtils.nextInt(0, length - 1);
