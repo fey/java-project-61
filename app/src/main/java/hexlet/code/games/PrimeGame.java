@@ -30,7 +30,9 @@ public class PrimeGame {
         return true;
     }
     static GameRound buildRound() {
-        var number = RandomUtils.nextInt(1, 50);
+        var min = 1;
+        var max = 50;
+        var number = RandomUtils.nextInt(min, max);
         var question = Integer.toString(number);
         var answer = isPrime(number) ? "yes" : "no";
 

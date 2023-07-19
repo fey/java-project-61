@@ -1,6 +1,6 @@
 package hexlet.code;
 
-public class GameRound {
+final public class GameRound {
     private final String question;
     private final String answer;
 

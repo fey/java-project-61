@@ -16,7 +16,9 @@ public class EvenGame {
         Engine.runGame(description, rounds);
     }
     static GameRound buildRound() {
-        var number = RandomUtils.nextInt(1, 100);
+        int min = 1;
+        int max = 100;
+        var number = RandomUtils.nextInt(min, max);
         var isEven = number % 2 == 0;
         var question = Integer.toString(number);
         var answer = isEven ? "yes" : "no";

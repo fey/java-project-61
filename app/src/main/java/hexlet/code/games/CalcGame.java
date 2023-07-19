@@ -19,10 +19,12 @@ public class CalcGame {
     }
     static GameRound buildRound() {
         String[] operations = {"+", "-", "*"};
+        var min = 1;
+        var max = 20;
         var operationIndex = new Random().nextInt(operations.length);
         var operation = operations[operationIndex];
-        var number1 = RandomUtils.nextInt(1, 20);
-        var number2 = RandomUtils.nextInt(1, 20);
+        var number1 = RandomUtils.nextInt(min, max);
+        var number2 = RandomUtils.nextInt(min, max);
         var question = number1 + " " + operation + " " + number2;
         var answer = Integer.toString(calculate(operation, number1, number2));
 

@@ -40,8 +40,10 @@ public class ProgressionGame {
     }
     static GameRound buildRound() {
         var length = 10;
-        var firstElement = RandomUtils.nextInt(1, 10);
-        var step = RandomUtils.nextInt(1, 10);
+        var min = 1;
+        var max = 10;
+        var firstElement = RandomUtils.nextInt(min, max);
+        var step = RandomUtils.nextInt(min, max);
         var hiddenIndex = RandomUtils.nextInt(0, length - 1);
         var progression = buildProgression(firstElement, step, length);
         var question = buildQuestion(progression, hiddenIndex);

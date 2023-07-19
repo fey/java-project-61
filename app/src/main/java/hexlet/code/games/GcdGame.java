@@ -20,8 +20,10 @@ public class GcdGame {
         return second == 0 ? first : findGcd(second, first % second);
     }
     static GameRound buildRound() {
-        var number1 = RandomUtils.nextInt(1, 50);
-        var number2 = RandomUtils.nextInt(1, 50);
+        var min = 1;
+        var max = 50;
+        var number1 = RandomUtils.nextInt(min, max);
+        var number2 = RandomUtils.nextInt(min, max);
         var gcd = findGcd(number1, number2);
         var question = number1 + " " + number2;
         var answer = Integer.toString(gcd);
