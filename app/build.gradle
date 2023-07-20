@@ -1,5 +1,4 @@
 plugins {
-    id 'java'
     id 'application'
 	id 'checkstyle'
 	id 'se.patrikerdes.use-latest-versions' version '0.2.18'
