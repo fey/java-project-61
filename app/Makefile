@@ -6,3 +6,6 @@ install-dist:
 
 lint:
 	./gradlew checkstyleMain
+
+check-updates-deps:
+	./gradlew dependencyUpdates
